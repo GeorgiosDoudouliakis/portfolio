@@ -1,0 +1,17 @@
+@import 'src/styles';
+
+footer {
+    padding: 0.8rem 0;
+    background: $primary-color;
+}
+
+p {
+    text-align: center;
+    color: $secondary-color;
+}
+
+@media(min-width: 768px) {
+    footer {
+        padding: 1.3rem 0;
+    }
+}
