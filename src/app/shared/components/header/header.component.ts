@@ -6,8 +6,10 @@ import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
-  icons: { [key:string]: string };
   isLinkHovered = false;
+  isInMobileDevice: boolean;
+  menu: HTMLElement;
+  mobileMenuState: 'closed' | 'opened' = 'closed';
   hoveredLinkIcon: HTMLDivElement;
   hoveredImage: HTMLImageElement;
   private elementRef: ElementRef;
@@ -17,12 +19,25 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-
+    this.isInMobileDevice = window.matchMedia('(max-width: 767px)').matches;
   }
   
   ngAfterViewInit() {
+    this.menu = this.elementRef.nativeElement.querySelector('nav');
     this.hoveredLinkIcon = this.elementRef.nativeElement.querySelector('.hovered-link-icon');
     this.hoveredImage = this.hoveredLinkIcon.querySelector('img') as HTMLImageElement;
+  }
+
+  mobileMenuHandler() {
+    if(this.mobileMenuState === 'closed') {
+      this.mobileMenuState = 'opened';
+      this.menu.style.opacity = '1';
+      this.menu.style.zIndex = '2';
+    } else if(this.mobileMenuState === 'opened') {
+      this.mobileMenuState = 'closed';
+      this.menu.style.opacity = '0';
+      this.menu.style.zIndex = '-5';
+    }
   }
 
   onLinkHover(link: 'about' | 'skills' | 'projects' | 'resume') {
