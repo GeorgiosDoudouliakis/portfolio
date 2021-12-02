@@ -1,0 +1,9 @@
+main {
+    height: calc(100vh - 105.18px);
+}
+
+@media(min-width: 768px) {
+    main {
+        height: calc(100vh - 121.18px);
+    }
+}
