@@ -11,6 +11,18 @@ body {
     min-height: 100vh;
 }
 
+h1, h2, h3 {
+    font-family: MontserratSemiBold;
+}
+
+p, li, a {
+    font-family: MontserratRegular;
+}
+
+span {
+    font-family: MontserratLight;
+}
+
 li {
     list-style-type: none;
 }
