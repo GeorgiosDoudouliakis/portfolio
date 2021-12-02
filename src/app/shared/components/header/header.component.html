@@ -1,0 +1,24 @@
+<header>
+    <div class="navigation-container">
+        <div class="navigation-links">
+            <div *ngIf="!isLinkHovered" class="brand rounded">GD</div>
+            <div class="hovered-link-icon rounded"><img/></div>
+            <nav>
+                <ul>
+                    <li (mouseover)="onLinkHover('about')" (mouseout)="onLeaveLinkHover()">About</li>
+                    <li (mouseover)="onLinkHover('skills')" (mouseout)="onLeaveLinkHover()">Skills</li>
+                    <li (mouseover)="onLinkHover('projects')" (mouseout)="onLeaveLinkHover()">Projects</li>
+                    <li (mouseover)="onLinkHover('resume')" (mouseout)="onLeaveLinkHover()">Resume</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-icons">
+            <a class="contact-icon" href="mailto: dudugeorge89@gmail.com">
+               <img src="/assets/images/gmail_logo.png" alt="gmail logo">
+            </a>
+            <a class="contact-icon" href="https://www.linkedin.com/in/georgios-doudouliakis-b97a5b19a/" target="blank">
+                <img src="/assets/images/linkedin_logo.png" alt="linkedin logo">
+            </a>
+        </div>
+    </div>
+</header>
