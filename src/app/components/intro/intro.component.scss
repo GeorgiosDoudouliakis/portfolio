@@ -1,0 +1,192 @@
+@import 'src/styles';
+
+.intro {
+    background: lighten($primary-color, 5%);
+    position: relative;
+    h1 {
+        color: $white-color;
+        margin-bottom: 1rem;
+        span {
+            display: block;
+            font-size: 1.2rem;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.2rem;
+            position: relative;
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 3px;
+                background: $secondary-color;
+            }
+            &:nth-of-type(1) {
+                width: 30px;
+            }
+            &:nth-of-type(2) {
+                width: 110px;
+            }
+            &:nth-of-type(3) {
+                width: 270px;
+            }
+        }
+    }
+    .intro-right-style {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        width: 30px;
+        height: 100%;
+        background: $secondary-color;
+        p {
+            font-size: 1.2rem;
+            position: absolute;
+            top: 40%;
+            right: 50%;
+            color: $white-color;
+            letter-spacing: 0.3rem;
+            transform: translate(50%, 40%) rotate(90deg);
+        }
+    }
+}
+
+.intro-content {
+    @include flex(column, nowrap, flex-start, flex-start);
+}
+
+.quote {
+    @include flex(row, nowrap, flex-start, flex-start);
+    blockquote {
+        font-family: MontserratLight;
+        font-style: italic;
+        width: 80%;
+        line-height: 1.4rem;
+        color: $white-color;
+    }
+}
+
+.arrow-right-container {
+    width: 24px;
+    height: 24px;
+}
+
+@media(min-width: 768px) {
+    .intro {
+        h1 {
+            span {
+                font-size: 1.8rem;
+                &:nth-of-type(1) {
+                    width: 40px;
+                }
+                &:nth-of-type(2) {
+                    width: 170px;
+                }
+                &:nth-of-type(3) {
+                    width: 400px;
+                }
+            }
+        }
+        .intro-right-style {
+            width: 40px;
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }   
+}
+
+@media(min-width: 960px) {
+    .quote {
+        blockquote {
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .intro {
+        h1 {
+            margin-bottom: 1.5rem;
+            span {
+                font-size: 2.2rem;
+                &:nth-of-type(1) {
+                    width: 50px;
+                }
+                &:nth-of-type(2) {
+                    width: 200px;
+                }
+                &:nth-of-type(3) {
+                    width: 500px;
+                }
+            }
+        }
+    }
+    
+    .intro-content {
+        padding: 2rem 0;
+    }
+}
+
+@media(min-width: 1280px) {
+    .intro {
+        h1 {
+            margin-bottom: 2rem;
+            span {
+                font-size: 2.6rem;
+                &:nth-of-type(1) {
+                    width: 60px;
+                }
+                &:nth-of-type(2) {
+                    width: 250px;
+                }
+                &:nth-of-type(3) {
+                    width: 580px;
+                }
+            }
+        }
+    }
+    
+    .intro-content {
+        padding: 2.5rem 0;
+    }
+
+    .quote {
+        blockquote {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+        }
+    }
+}
+
+@media(min-width: 1500px) {
+    .intro {
+        h1 {
+            span {
+                font-size: 3rem;
+                &:nth-of-type(1) {
+                    width: 70px;
+                }
+                &:nth-of-type(2) {
+                    width: 280px;
+                }
+                &:nth-of-type(3) {
+                    width: 670px;
+                }
+            }
+        }
+    }
+    
+    .intro-content {
+        padding: 3rem 0;
+    }
+
+    .quote {
+        blockquote {
+            font-size: 1.7rem;
+            line-height: 1.9rem;
+        }
+    }
+}
