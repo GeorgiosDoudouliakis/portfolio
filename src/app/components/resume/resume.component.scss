@@ -10,9 +10,10 @@ p {
 }
 
 .resume-actions {
+    @include flex(column, nowrap, center, center);
     a {
         width: 142.31px;
-        margin-left: 1rem;
+        margin-top: 1rem;
     }
 }
 
@@ -53,6 +54,17 @@ button {
     font-size: 1rem;
     height: 39px;
     background: transparent;
+}
+
+@media(min-width: 450px) {
+    .resume-actions {
+        @include flex(row, nowrap, center, center);
+        a {
+            width: 142.31px;
+            margin-top: 0;
+            margin-left: 1rem;
+        }
+    }
 }
 
 @media(min-width: 960px) {
