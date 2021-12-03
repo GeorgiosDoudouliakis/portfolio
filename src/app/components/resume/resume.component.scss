@@ -54,3 +54,14 @@ button {
     height: 39px;
     background: transparent;
 }
+
+@media(min-width: 960px) {
+    .resume {
+        @include flex(row, nowrap, space-evenly, center);
+    }
+
+    p {
+        text-align: left;
+        width: 65%;
+    }
+}
