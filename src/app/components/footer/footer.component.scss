@@ -5,6 +5,15 @@ footer {
     background: $primary-color;
 }
 
+.go-top-arrow-container {
+    @include flex(row, nowrap, center, center);
+    width: 24px;
+    margin:  0 auto 0.3rem auto;
+    background: $secondary-color;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 p {
     text-align: center;
     color: $secondary-color;
