@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, a, button {
     font-family: MontserratSemiBold;
 }
 
@@ -37,6 +37,12 @@ a {
 
 p {
     line-height: 1.5rem;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 // Reusable Classes
