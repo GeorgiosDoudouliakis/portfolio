@@ -30,3 +30,20 @@ li {
 a {
     text-decoration: none;
 }
+
+p {
+    line-height: 1.5rem;
+}
+
+// Reusable Classes
+.container {
+    padding: 1.5rem 0;
+    width: 90%;
+    margin: auto;
+}
+
+@media(min-width: 768px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
