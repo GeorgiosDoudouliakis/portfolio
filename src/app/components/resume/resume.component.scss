@@ -9,7 +9,14 @@ p {
     margin-bottom: 1rem;
 }
 
-a {
+.resume-actions {
+    a {
+        width: 142.31px;
+        margin-left: 1rem;
+    }
+}
+
+button, a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -40,4 +47,10 @@ a {
             left: -30px;
         }
     }
+}
+
+button {
+    font-size: 1rem;
+    height: 39px;
+    background: transparent;
 }
