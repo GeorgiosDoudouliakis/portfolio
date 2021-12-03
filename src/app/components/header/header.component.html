@@ -9,7 +9,7 @@
             </div>
             <nav>
                 <ul>
-                    <li (mouseover)="onLinkHover('about')" (mouseout)="onLeaveLinkHover()">
+                    <li (mouseover)="onLinkHover('about')" (mouseout)="onLeaveLinkHover()" (click)="scrollTo('about')">
                         <a routerLink="/about">About</a>
                     </li>
                     <li (mouseover)="onLinkHover('skills')" (mouseout)="onLeaveLinkHover()">
@@ -18,7 +18,7 @@
                     <li (mouseover)="onLinkHover('projects')" (mouseout)="onLeaveLinkHover()">
                         <a href="">Projects</a>
                     </li>
-                    <li (mouseover)="onLinkHover('resume')" (mouseout)="onLeaveLinkHover()">
+                    <li (mouseover)="onLinkHover('resume')" (mouseout)="onLeaveLinkHover()" (click)="scrollTo('about')">
                         <a routerLink="/resume">Resume</a>
                     </li>
                 </ul>

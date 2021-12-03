@@ -1,5 +1,7 @@
 import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
 
+type Link ='about' | 'skills' | 'projects' | 'resume';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -40,7 +42,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     }
   }
 
-  onLinkHover(link: 'about' | 'skills' | 'projects' | 'resume') {
+  scrollTo(link: Link) {
+    document.querySelector(`.${link}`)?.scrollIntoView();
+  }
+
+  onLinkHover(link: Link) {
     this.isLinkHovered = true;
     this.hoveredLinkIcon.style.display = 'flex';
     this.hoveredLinkIcon.style.justifyContent = 'center';
