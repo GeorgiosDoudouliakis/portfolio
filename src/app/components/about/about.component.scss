@@ -1,0 +1,39 @@
+@import 'src/styles';
+
+.about {
+    @include flex(column, nowrap, center, center);
+}
+
+.about-content {
+    h2 {
+        width: 140px;
+        padding: 0.3rem 0;
+        margin: 0 auto 1rem auto;
+        border-bottom: 3px solid $secondary-color;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+@media(min-width: 960px) {
+    .about {
+        @include flex(row, nowrap, space-between, center);
+    }
+
+    .about-content {
+        width: 70%;
+        h2 {
+            margin: 0 0 1rem 0;
+        }
+        p {
+            text-align: left;
+        }
+    }
+}
+
+@media(min-width: 1280px) {
+    .about-content {
+        width: 80%;
+    }
+}
