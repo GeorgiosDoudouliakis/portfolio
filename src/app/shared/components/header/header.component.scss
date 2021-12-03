@@ -28,6 +28,11 @@ header {
     @include flex(row, nowrap, center, center);
     font-family: MontserratBold;
     color: $primary-color;
+    cursor: pointer;
+    transition: 0.7s ease;
+    &:hover {
+        transform: rotate(360deg);
+    }
 }
 
 .hovered-link-icon {
