@@ -45,7 +45,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.hoveredLinkIcon.style.display = 'flex';
     this.hoveredLinkIcon.style.justifyContent = 'center';
     this.hoveredLinkIcon.style.alignItems = 'center';
-    this.hoveredImage.src = `/assets/images/${link}_icon.png`;
+    this.hoveredImage.src = `/assets/images/icons/${link}_icon.png`;
     this.hoveredImage.alt = `${link} icon`;
   }
 
