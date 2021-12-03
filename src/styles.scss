@@ -45,6 +45,12 @@ button {
     cursor: pointer;
 }
 
+h2 {
+    padding: 0.3rem 0;
+    margin: 0 auto 1rem auto;
+    border-bottom: 3px solid $secondary-color;
+}
+
 // Reusable Classes
 .container {
     padding: 1.5rem 0;
