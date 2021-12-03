@@ -56,12 +56,19 @@ button {
 }
 
 @media(min-width: 960px) {
-    .resume {
-        @include flex(row, nowrap, space-evenly, center);
-    }
-
     p {
-        text-align: left;
-        width: 65%;
+        width: 70%;
+    }
+}
+
+@media(min-width: 1280px) {
+    p {
+        width: 60%;
+    }
+}
+
+@media(min-width: 1500px) {
+    p {
+        width: 50%;
     }
 }
