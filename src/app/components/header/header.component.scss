@@ -100,8 +100,9 @@ nav {
 
     nav {
         position: initial;
-        border-top: initial;
+        width: unset;
         padding: initial;
+        border-top: initial;
         opacity: 1;
         z-index: 1;
         ul {
