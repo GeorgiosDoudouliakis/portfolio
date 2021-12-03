@@ -1,14 +1,12 @@
 @import 'src/styles';
 
-section {
+.resume {
     @include flex(column, nowrap, center, center);
-    width: 90%;
-    padding: 1.5rem 0;
-    margin: auto;
 }
 
 p {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 a {
@@ -17,7 +15,6 @@ a {
     align-items: center;
     position: relative;
     padding: 0.5rem 0.8rem;
-    margin-top: 0.8rem;
     color: $primary-color;
     border-radius: 4px;
     border: 2px solid $primary-color;
@@ -42,11 +39,5 @@ a {
             top: -30px;
             left: -30px;
         }
-    }
-}
-
-@media(min-width: 768px) {
-    p {
-        font-size: 1.2rem;
     }
 }
