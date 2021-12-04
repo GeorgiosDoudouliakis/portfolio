@@ -32,17 +32,16 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   mobileMenuHandler() {
     if(this.mobileMenuState === 'closed') {
-      this.mobileMenuState = 'opened';
-      this.menu.style.opacity = '1';
-      this.menu.style.zIndex = '2';
+      this.openMobileMenu();
     } else if(this.mobileMenuState === 'opened') {
-      this.mobileMenuState = 'closed';
-      this.menu.style.opacity = '0';
-      this.menu.style.zIndex = '-5';
+      this.closeMobileMenu();
     }
   }
 
   scrollTo(link: Link) {
+    if(this.isInMobileDevice) {
+      this.closeMobileMenu();
+    }
     document.querySelector(`.${link}`)?.scrollIntoView();
   }
 
@@ -58,5 +57,17 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   onLeaveLinkHover() {
     this.isLinkHovered = false;
     this.hoveredLinkIcon.style.display = 'none';
+  }
+
+  private openMobileMenu() {
+    this.mobileMenuState = 'opened';
+    this.menu.style.opacity = '1';
+    this.menu.style.zIndex = '2';
+  }
+
+  private closeMobileMenu() {
+    this.mobileMenuState = 'closed';
+    this.menu.style.opacity = '0';
+    this.menu.style.zIndex = '-5';
   }
 }
