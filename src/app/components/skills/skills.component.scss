@@ -1,0 +1,64 @@
+@import 'src/styles';
+
+h2 {
+    width: 85px;
+    margin: 0 auto 1rem auto;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skills-technologies-container {
+    @include flex(row, wrap, space-between, center);
+    row-gap: 20px;
+    width: 75%;
+    margin: auto;
+}
+
+.tech {
+    @include flex(column, nowrap, center, center);
+    width: 43%;
+    img {
+        margin-bottom: 1rem;
+    }
+    h3 {
+        text-align: center;
+        color: lighten($black-color, 30%);
+    }
+}
+
+@media(min-width: 560px) {
+    .skills-technologies-container {
+        width: 65%;
+    }
+}
+
+@media(min-width: 768px) {
+    .tech {
+        width: 33%;
+    }
+}
+
+@media(min-width: 1140px) {
+    .skills-technologies-container {
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1280px) {
+    .skills-technologies-container {
+        width: 40%;
+    }
+}
+
+@media(min-width: 1500px) {
+    .skills-technologies-container {
+        row-gap: 40px;
+    }
+
+    .tech {
+        width: 23%;
+    }
+}

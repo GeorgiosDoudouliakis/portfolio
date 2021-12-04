@@ -10,6 +10,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PdfViewComponent } from './components/pdf-view/pdf-view.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { IntroComponent } from './components/intro/intro.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IntroComponent } from './components/intro/intro.component';
     ResumeComponent,
     AboutComponent,
     PdfViewComponent,
-    IntroComponent
+    IntroComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

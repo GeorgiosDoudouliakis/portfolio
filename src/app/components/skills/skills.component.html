@@ -1,0 +1,12 @@
+<section class="skills container">
+    <h2>SKILLS</h2>
+    <p>Skills and technologies i use that bring a product to life</p>
+    <section class="skills-technologies-container">
+        <ng-container *ngFor="let tech of technologiesSkills">
+            <article class="tech">
+                <img [src]="tech.image" alt="{{ tech.name }} logo">
+                <h3>{{ tech.name }}</h3>
+            </article>
+        </ng-container>
+    </section>
+</section>
