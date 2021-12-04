@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: $white-color;
+    background: $secondary-color;
+}
+
 html {
     scroll-behavior: smooth;
 }
