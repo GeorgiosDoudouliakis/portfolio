@@ -9,7 +9,9 @@ export class IntroComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
+  scrollToProjects() {
+    document.querySelector(`.projects`)?.scrollIntoView();
+  }
 }

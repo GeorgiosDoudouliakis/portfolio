@@ -72,6 +72,34 @@
     height: 24px;
 }
 
+.go-to-projects-container {
+    @include flex(column, nowrap, center, center);
+    width: 100px;
+    padding-bottom: 1rem;
+    margin: auto;
+    cursor: pointer;
+    span {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+        color: $secondary-color;
+        letter-spacing: 0.2rem;
+    }
+}
+
+.go-to-projects-icon {
+   position: relative;
+   animation: upDown 1s infinite ease-in-out;
+}
+
+@keyframes upDown {
+    from {
+        top: 0;
+    }
+    to {
+        top: 10px;
+    }
+}
+
 @media(min-width: 768px) {
     .intro {
         h1 {
@@ -95,6 +123,12 @@
             }
         }
     }   
+
+    .go-to-projects-container {
+        span {
+            font-size: 1.1rem;
+        }
+    }
 }
 
 @media(min-width: 960px) {
@@ -127,6 +161,12 @@
     
     .intro-content {
         padding: 2rem 0;
+    }
+
+    .go-to-projects-container {
+        span {
+            font-size: 1.2rem;
+        }
     }
 }
 
