@@ -11,6 +11,7 @@ import { PdfViewComponent } from './components/pdf-view/pdf-view.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { IntroComponent } from './components/intro/intro.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     AboutComponent,
     PdfViewComponent,
     IntroComponent,
-    SkillsComponent
+    SkillsComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
