@@ -62,15 +62,12 @@ nav {
     z-index: -5;
     transition: .5s ease;
     li {
+        color: $secondary-color;
+        padding: 0.7rem;
         cursor: pointer;
-        a {
-            display: inline-block;
-            color: $secondary-color;
-            padding: 0.7rem;
-            transition: .5s ease;
-            &:hover {
-                color: $white-color;
-            }
+        transition: .5s ease;
+        &:hover {
+            color: $white-color;
         }
     }
 }
@@ -110,6 +107,7 @@ nav {
             li {
                 font-size: 1rem;
                 color: $secondary-color;
+                padding: 1.3rem 1rem;
                 cursor: pointer;
                 &:hover {
                     position: relative;
@@ -121,12 +119,6 @@ nav {
                         width: 100%;
                         height: 4px;
                         background: $secondary-color;
-                    }
-                }
-                a {
-                    padding: 1.3rem 1rem;
-                    &:hover {
-                        color: unset;
                     }
                 }
             }
