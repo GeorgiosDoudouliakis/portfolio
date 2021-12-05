@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -7,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {}
 
   scrollToProjects() {
     document.querySelector(`.projects`)?.scrollIntoView();
+    this.router.navigate(['/projects']);
   }
 }
