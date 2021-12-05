@@ -7,5 +7,12 @@ export const PROJECTS: Project[] = [
         tags: ['HTML', 'CSS', 'Bulma', 'JavaScript', 'TypeScript', 'Angular'],
         previewLink: '',
         codeLink: 'https://github.com/GeorgiosDoudouliakis/covid19-greece'
+    },
+    {
+        title: 'Angular Conference Website',
+        description: 'A website about the upcoming event of Angular in Athens, with info about the event.',
+        tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript', 'Angular'],
+        previewLink: 'https://suspicious-fermi-591959.netlify.app',
+        codeLink: 'https://github.com/GeorgiosDoudouliakis/angular-conference-website'
     }
 ]
