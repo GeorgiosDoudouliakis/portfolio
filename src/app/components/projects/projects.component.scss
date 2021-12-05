@@ -1,6 +1,16 @@
 @import "src/styles";
 
+.projects {
+    width: 90%;
+    margin: 0 auto 2rem auto;
+}
+
 h2 {
     width: 130px;
     margin-bottom: 2rem;
+}
+
+.projects-container {
+    @include flex(row, wrap, center, center);
+    gap: 20px;
 }
