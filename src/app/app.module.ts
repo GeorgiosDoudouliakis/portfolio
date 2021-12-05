@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -31,7 +30,6 @@ import { ProjectComponent } from './components/projects/project/project.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     PdfViewerModule
   ],
   providers: [],
