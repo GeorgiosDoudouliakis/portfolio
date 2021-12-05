@@ -1,4 +1,4 @@
-type Tag = 'HTML' | 'CSS' | 'JavaScript' | 'TypeScript' | 'Angular';
+type Tag = 'HTML' | 'CSS' | 'Bulma' | 'Bootstrap' |'JavaScript' | 'TypeScript' | 'Angular';
 
 export interface Project {
     title: string;
