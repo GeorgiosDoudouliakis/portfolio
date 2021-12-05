@@ -11,6 +11,6 @@ h2 {
 }
 
 .projects-container {
-    @include flex(row, wrap, center, center);
+    @include flex(row, wrap, center, flex-start);
     gap: 20px;
 }
