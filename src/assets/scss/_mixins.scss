@@ -5,3 +5,20 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin tooltip($content) {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 130px;
+    opacity: 0;
+    content: $content;
+    text-align: center;
+    padding: 0.5rem;
+    color: $white-color;
+    background: $secondary-color;
+    border: 1px solid $white-color;
+    border-radius: 4px;
+    z-index: 1;
+    transition: .6s ease;
+}

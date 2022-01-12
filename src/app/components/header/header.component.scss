@@ -84,6 +84,7 @@ nav {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    position: relative;
     &:last-of-type {
         margin-left: 0.6rem;
     }
@@ -91,6 +92,16 @@ nav {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    &.gmail::after {
+        @include tooltip('Send me an email'); 
+    }
+    &.linkedin::after {
+        @include tooltip('See my LinkedIn profile');
+    }
+    &.gmail:hover::after,
+    &.linkedin:hover::after {
+        opacity: 1;
     }
 }
 
