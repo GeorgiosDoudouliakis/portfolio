@@ -64,6 +64,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.menu.style.width = '100%';
     this.menu.style.opacity = '1';
     this.menu.style.zIndex = '2';
+    document.body.style.overflowY = 'hidden';
   }
 
   private closeMobileMenu() {
@@ -71,5 +72,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.menu.style.width = '0';
     this.menu.style.opacity = '0';
     this.menu.style.zIndex = '-5';
+    document.body.style.overflowY = 'auto';
   }
 }

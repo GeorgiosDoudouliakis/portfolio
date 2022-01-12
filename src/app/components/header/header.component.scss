@@ -51,11 +51,14 @@ header {
 
 nav {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 60.59px;
     left: 0;
     width: 0;
+    height: calc(100vh - 60.59px);
     text-align: center;
-    padding: 0.5rem 0;
     background: $primary-color;
     border-top: 1px solid $secondary-color;
     border-bottom: 1px solid $secondary-color;
@@ -64,7 +67,7 @@ nav {
     transition: .5s ease-in-out;
     li {
         color: $secondary-color;
-        padding: 0.7rem;
+        padding: 1rem 0;
         cursor: pointer;
         transition: .5s ease;
         &:hover {
@@ -99,6 +102,7 @@ nav {
     nav {
         position: initial;
         width: unset;
+        height: initial;
         padding: initial;
         border-top: initial;
         border-bottom: initial;
