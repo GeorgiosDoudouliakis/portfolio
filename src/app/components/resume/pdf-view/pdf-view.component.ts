@@ -12,4 +12,8 @@ export class PdfViewComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  onClose() {
+    this.pdfViewHandler.emit(false);
+    document.body.style.overflowY = 'auto';
+  }
 }

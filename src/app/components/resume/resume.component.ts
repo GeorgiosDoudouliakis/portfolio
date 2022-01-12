@@ -12,7 +12,8 @@ export class ResumeComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  pdfViewHandler() {
+  onPdfOpen() {
     this.isPdfViewOpen = true;
+    document.body.style.overflowY = 'hidden';
   }
 }
