@@ -53,7 +53,7 @@ nav {
     position: absolute;
     top: 60.59px;
     left: 0;
-    width: 100%;
+    width: 0;
     text-align: center;
     padding: 0.5rem 0;
     background: $primary-color;
@@ -61,7 +61,7 @@ nav {
     border-bottom: 1px solid $secondary-color;
     opacity: 0;
     z-index: -5;
-    transition: .5s ease;
+    transition: .5s ease-in-out;
     li {
         color: $secondary-color;
         padding: 0.7rem;

@@ -61,12 +61,14 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   private openMobileMenu() {
     this.mobileMenuState = 'opened';
+    this.menu.style.width = '100%';
     this.menu.style.opacity = '1';
     this.menu.style.zIndex = '2';
   }
 
   private closeMobileMenu() {
     this.mobileMenuState = 'closed';
+    this.menu.style.width = '0';
     this.menu.style.opacity = '0';
     this.menu.style.zIndex = '-5';
   }
