@@ -10,7 +10,7 @@
     cursor: pointer;
     transition: .5s ease;
     &:hover {
-        transform: rotate(-2deg);
+        box-shadow: 1px 1px 20px 3px $secondary-color;
     }
 }
 
