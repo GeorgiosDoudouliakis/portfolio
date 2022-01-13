@@ -1,0 +1,33 @@
+@import 'src/styles';
+
+.contact {
+    @include flex(row, nowrap, center, center);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+    border-radius: 100%;
+    background: $secondary-color;
+    cursor: pointer;
+    animation: scale 1s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@media(min-width: 1024px) {
+    .contact {
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
