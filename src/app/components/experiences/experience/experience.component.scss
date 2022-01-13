@@ -3,9 +3,10 @@
 .experience {
     @include flex(column, nowrap, flex-start, flex-start);
     column-gap: 2rem;
-    background: $primary-color;
-    border-radius: 4px;
     padding: 1rem;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    background: $primary-color;
     & > * {
         color: $white-color;
     }
