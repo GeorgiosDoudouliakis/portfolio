@@ -94,10 +94,10 @@ nav {
         object-fit: cover;
     }
     &.gmail::after {
-        @include tooltip('Send me an email'); 
+        @include tooltip(40px, 0, 'Send me an email'); 
     }
     &.linkedin::after {
-        @include tooltip('See my LinkedIn profile');
+        @include tooltip(40px, 0, 'See my LinkedIn profile');
     }
     &.gmail:hover::after,
     &.linkedin:hover::after {
