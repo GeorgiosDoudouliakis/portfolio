@@ -1,0 +1,8 @@
+<article class="experience" [style.marginBottom]="numOfExperiences > 1 ? '1rem' : '0'">
+    <span class="duration">{{ experience.duration }}</span>
+    <section class="company-location">
+        <h3 class="company">{{ experience.company | uppercase }}</h3>
+        <h4 class="company-description">{{ experience.companyDescription }}</h4>
+        <span class="location">{{ experience.location }}</span>
+    </section>
+</article>

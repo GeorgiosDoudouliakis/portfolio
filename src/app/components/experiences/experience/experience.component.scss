@@ -1,0 +1,49 @@
+@import 'src/styles';
+
+.experience {
+    @include flex(column, nowrap, flex-start, flex-start);
+    column-gap: 2rem;
+    background: $primary-color;
+    border-radius: 4px;
+    padding: 1rem;
+    & > * {
+        color: $white-color;
+    }
+}
+
+.company {
+    font-family: MontserratBold;
+}
+
+.company-location {
+    padding-left: 0.8rem;
+    border-left: 3px solid $secondary-color;
+}
+
+.duration {
+    margin-bottom: 0.8rem;
+}
+
+.company,
+.company-description {
+    margin-bottom: 0.3rem;
+}
+
+.location {
+    font-style: italic;
+}
+
+@media(min-width: 560px) {
+    .experience {
+        flex-direction: row;
+    }
+
+    .duration {
+        margin-bottom: 0;
+    }
+
+    .company,
+    .company-description {
+        margin-bottom: 0.5rem;
+    }
+}

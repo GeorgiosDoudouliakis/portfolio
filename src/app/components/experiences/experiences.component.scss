@@ -1,0 +1,5 @@
+@import 'src/styles';
+
+.experiences {
+    @include flex(column, nowrap, center, center);
+}
