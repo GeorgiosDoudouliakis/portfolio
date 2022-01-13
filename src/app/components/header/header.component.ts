@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
 
-type Link ='about' | 'education' | 'skills' | 'projects' | 'resume';
+type Link ='about' | 'education' | 'experiences' | 'skills' | 'projects' | 'resume';
 
 @Component({
   selector: 'app-header',
