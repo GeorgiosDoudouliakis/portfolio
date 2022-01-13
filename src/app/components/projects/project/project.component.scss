@@ -7,11 +7,6 @@
     border-radius: 4px;
     padding: 0.8rem;
     border: 1px solid $secondary-color;
-    cursor: pointer;
-    transition: .5s ease;
-    &:hover {
-        transform: translateY(-8px);
-    }
 }
 
 h3 {
