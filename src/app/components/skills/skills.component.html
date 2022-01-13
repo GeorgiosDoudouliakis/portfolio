@@ -4,7 +4,7 @@
     <section class="skills-technologies-container">
         <ng-container *ngFor="let tech of technologiesSkills">
             <article class="tech">
-                <img [src]="tech.image" alt="{{ tech.name }} logo">
+                <img [src]="tech.image" alt="{{ tech.name }} logo" title="{{ tech.name }}">
                 <h3>{{ tech.name }}</h3>
             </article>
         </ng-container>
