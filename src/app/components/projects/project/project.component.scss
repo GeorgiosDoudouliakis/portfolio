@@ -44,8 +44,24 @@ svg {
     }
 }
 
+.project-actions > a {
+    position: relative;
+    &:hover::after {
+        opacity: 1;
+    }
+}
+
+.preview-btn {
+    &::after {
+        @include tooltip(30px, -55px, 'Preview Project'); 
+    }
+}
+
 .code-btn {
     margin-left: 0.8rem;
+    &::after {
+        @include tooltip(30px, -55px, 'Source Code'); 
+    }
 }
 
 @media(min-width: 768px) {
