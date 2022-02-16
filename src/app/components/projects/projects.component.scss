@@ -11,6 +11,19 @@ h2 {
 }
 
 .projects-container {
-    @include flex(row, wrap, center, flex-start);
+    display: grid;
+    grid-auto-rows: auto;
     gap: 20px;
+}
+
+@media(min-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1280px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

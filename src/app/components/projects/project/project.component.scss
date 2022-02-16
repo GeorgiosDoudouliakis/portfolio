@@ -63,15 +63,3 @@ svg {
         @include tooltip(30px, -55px, 'Source Code'); 
     }
 }
-
-@media(min-width: 768px) {
-    :host {
-        width: 48%;
-    }
-}
-
-@media(min-width: 1024px) {
-    :host {
-        width: 33%;
-    }
-}
