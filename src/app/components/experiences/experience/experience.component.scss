@@ -1,15 +1,11 @@
 @import 'src/styles';
 
-.experience {
+article {
     @include flex(column, nowrap, flex-start, flex-start);
     column-gap: 2rem;
     padding: 1rem;
-    border: 1px solid $secondary-color;
     border-radius: 4px;
-    background: $primary-color;
-    & > * {
-        color: $white-color;
-    }
+    background: darken($white-color, 4%);
 }
 
 .company {
@@ -18,10 +14,11 @@
 
 .company-location {
     padding-left: 0.8rem;
-    border-left: 3px solid $secondary-color;
+    border-left: 3px solid $primary-color;
 }
 
 .duration {
+    font-family: MontserratSemiBold;
     margin-bottom: 0.8rem;
 }
 
@@ -35,7 +32,7 @@
 }
 
 @media(min-width: 560px) {
-    .experience {
+    article {
         flex-direction: row;
     }
 
