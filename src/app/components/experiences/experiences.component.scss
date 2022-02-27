@@ -3,3 +3,13 @@
 .experience {
     @include flex(column, nowrap, center, center);
 }
+
+.experiences-container {
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .experiences-container {
+        width: 600px;
+    }
+}

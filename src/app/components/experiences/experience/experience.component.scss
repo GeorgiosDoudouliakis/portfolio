@@ -10,11 +10,7 @@ article {
 
 .company {
     font-family: MontserratBold;
-}
-
-.company-location {
-    padding-left: 0.8rem;
-    border-left: 3px solid $primary-color;
+    color: $primary-color;
 }
 
 .duration {
@@ -29,19 +25,4 @@ article {
 
 .location {
     font-style: italic;
-}
-
-@media(min-width: 560px) {
-    article {
-        flex-direction: row;
-    }
-
-    .duration {
-        margin-bottom: 0;
-    }
-
-    .company,
-    .company-description {
-        margin-bottom: 0.5rem;
-    }
 }
