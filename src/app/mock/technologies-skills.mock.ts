@@ -36,9 +36,5 @@ export const TECHNOLOGIES_SKILLS: TechnologiesSkills[] = [
     {
         name: 'Responsive Design',
         image: 'assets/images/technologies-skills/responsive_design_logo.png'
-    },
-    {
-        name: 'SEO',
-        image: 'assets/images/technologies-skills/seo_logo.png'
     }
-]
+];
